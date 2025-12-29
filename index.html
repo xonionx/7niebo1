@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7Niebo - Gabinet Masażu i Piercingu</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Nawigacja -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <img src="logo.png" alt="7 Niebo Salon Urody">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#hero">Start</a></li>
+                <li><a href="#about">O nas</a></li>
+                <li><a href="#services">Oferta</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sekcja Hero -->
+    <header id="hero" class="hero">
+        <div class="clouds-container">
+            <div class="cloud cloud-1"></div>
+            <div class="cloud cloud-2"></div>
+            <div class="cloud cloud-3"></div>
+            <div class="cloud cloud-4"></div>
+        </div>
+        <div class="hero-content fade-in-section">
+            <h1>Poczuj się jak w siódmym niebie</h1>
+            <p>Profesjonalny masaż, piercing i zabiegi kosmetyczne.</p>
+            <div class="hero-buttons">
+                <a href="#" class="btn-primary pulse-button">Zarezerwuj wizytę</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sekcja O nas -->
+    <section id="about" class="section about fade-in-section">
+        <div class="container">
+            <h2 class="section-title">O nas</h2>
+            <p class="section-subtitle">Miejsce stworzone dla Twojego relaksu i piękna</p>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>W <strong>7Niebo</strong> wierzymy, że każdy zasługuje na chwilę wytchnienia. Nasz gabinet to oaza spokoju, gdzie profesjonalizm łączy się z pasją. Oferujemy szeroki wachlarz usług, od relaksacyjnych masaży, przez precyzyjny piercing, aż po kompleksowe zabiegi upiększające.</p>
+                    <p>Dbamy o każdy detal, abyś czuł się u nas bezpiecznie i komfortowo. Nasz zespół to wykwalifikowani specjaliści z wieloletnim doświadczeniem.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sekcja Oferta -->
+    <section id="services" class="section services fade-in-section">
+        <div class="container">
+            <h2 class="section-title">Nasza Oferta</h2>
+            <div class="services-grid">
+                <!-- Karta 1: Masaż -->
+                <div class="service-card">
+                    <div class="icon">💆‍♀️</div>
+                    <h3>Masaż</h3>
+                    <p>Oferujemy masaże relaksacyjne, lecznicze, sportowe oraz gorącymi kamieniami. Pozwól sobie na chwilę zapomnienia i zredukuj stres.</p>
+                    <a href="masaz.html" class="btn-book">Umów wizytę</a>
+                </div>
+                <!-- Karta 2: Piercing -->
+                <div class="service-card">
+                    <div class="icon">✨</div>
+                    <h3>Piercing</h3>
+                    <p>Profesjonalne przekłuwanie ciała w sterylnych warunkach. Szeroki wybór kolczyków i fachowe doradztwo w zakresie pielęgnacji.</p>
+                    <a href="piercing.html" class="btn-book">Umów wizytę</a>
+                </div>
+                <!-- Karta 3: Kosmetyka -->
+                <div class="service-card">
+                    <div class="icon">💅</div>
+                    <h3>Kosmetyka</h3>
+                    <p>Zabiegi pielęgnacyjne na twarz i ciało. Manicure, pedicure, henna i wiele innych usług, które podkreślą Twoje naturalne piękno.</p>
+                    <a href="kosmetyka.html" class="btn-book">Umów wizytę</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sekcja Cennik -->
+    <section id="pricing" class="section pricing fade-in-section">
+        <div class="container">
+            <h2 class="section-title">Cennik</h2>
+            <p class="section-subtitle">Wybierz zabieg idealny dla siebie</p>
+            <div class="pricing-container">
+                <div class="pricing-card">
+                    <h3>Masaże</h3>
+                    <ul>
+                        <li><span>Masaż Klasyczny (60 min)</span> <strong>150 zł</strong></li>
+                        <li><span>Masaż Relaksacyjny (60 min)</span> <strong>140 zł</strong></li>
+                        <li><span>Masaż Gorącymi Kamieniami</span> <strong>180 zł</strong></li>
+                        <li><span>Masaż Twarzy Kobido</span> <strong>200 zł</strong></li>
+                    </ul>
+                </div>
+                <div class="pricing-card featured">
+                    <h3>Piercing</h3>
+                    <ul>
+                        <li><span>Płatki uszu (Lobe)</span> <strong>80 zł</strong></li>
+                        <li><span>Chrząstka (Helix/Tragus)</span> <strong>120 zł</strong></li>
+                        <li><span>Nos (Nostril/Septum)</span> <strong>140 zł</strong></li>
+                        <li><span>Pępek (Navel)</span> <strong>150 zł</strong></li>
+                        <li class="note">*Cena zawiera podstawowy kolczyk z tytanu</li>
+                    </ul>
+                </div>
+                <div class="pricing-card">
+                    <h3>Kosmetyka</h3>
+                    <ul>
+                        <li><span>Manicure Hybrydowy</span> <strong>100 zł</strong></li>
+                        <li><span>Pedicure SPA</span> <strong>140 zł</strong></li>
+                        <li><span>Henna Pudrowa + Geometria</span> <strong>90 zł</strong></li>
+                        <li><span>Oczyszczanie Twarzy</span> <strong>180 zł</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sekcja Galeria -->
+    <section id="gallery" class="section gallery fade-in-section">
+        <div class="container">
+            <h2 class="section-title">Galeria</h2>
+            <p class="section-subtitle">Zobacz nasze realizacje i wnętrza</p>
+            <div class="gallery-grid">
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Masaż relaksacyjny"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Wnętrze gabinetu"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Zabiegi kosmetyczne"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Detale"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1596178065887-1198b6148b2b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Piercing biżuteria"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Strefa relaksu"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sekcja Kontakt -->
+    <section id="contact" class="section contact fade-in-section">
+        <div class="container">
+            <h2 class="section-title">Kontakt</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <h4>Adres</h4>
+                        <p>ul. Przykładowa 7<br>00-001 Miasto</p>
+                    </div>
+                    <div class="info-item">
+                        <h4>Telefon</h4>
+                        <p>+48 123 456 789</p>
+                    </div>
+                    <div class="info-item">
+                        <h4>Godziny otwarcia</h4>
+                        <p>Pon - Pt: 10:00 - 18:00<br>Sob: 10:00 - 14:00</p>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Imię i nazwisko" required>
+                    <input type="email" placeholder="Adres email" required>
+                    <textarea placeholder="Twoja wiadomość..." rows="5" required></textarea>
+                    <button type="submit" class="btn-primary">Wyślij wiadomość</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stopka -->
+    <footer>
+        <p>&copy; 2024 7 niebo Salon Urody. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

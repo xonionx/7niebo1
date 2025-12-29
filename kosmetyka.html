@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kosmetyka - 7Niebo Salon Urody</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        .services-detail-section {
+            padding: 150px 0 50px;
+        }
+        .service-list-item {
+            background: white;
+            padding: 30px;
+            margin-bottom: 20px;
+            border-radius: 15px;
+            box-shadow: var(--shadow);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: transform 0.3s ease;
+        }
+        .service-list-item:hover {
+            transform: translateY(-5px);
+        }
+        .service-info h3 {
+            margin-bottom: 10px;
+            color: var(--text-dark);
+        }
+        .service-details {
+            display: flex;
+            gap: 20px;
+            color: var(--text-light);
+            margin-bottom: 15px;
+        }
+        .service-details span {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .service-action {
+            text-align: right;
+        }
+        .price {
+            display: block;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            margin-bottom: 10px;
+        }
+        @media (max-width: 768px) {
+            .service-list-item {
+                flex-direction: column;
+                text-align: center;
+                gap: 20px;
+            }
+            .service-details {
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+            .service-action {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html#hero" class="logo">
+                <img src="logo.png" alt="7 Niebo Salon Urody">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html#hero">Start</a></li>
+                <li><a href="index.html#about">O nas</a></li>
+                <li><a href="index.html#services">Oferta</a></li>
+                <li><a href="index.html#contact">Kontakt</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="services-detail-section">
+        <div class="container">
+            <h2 class="section-title">Kosmetyka</h2>
+            <p class="section-subtitle">Pielęgnacja twarzy i ciała na najwyższym poziomie</p>
+            
+            <div class="service-list">
+                <div class="service-list-item">
+                    <div class="service-info">
+                        <h3>Manicure Hybrydowy</h3>
+                        <p>Opracowanie płytki paznokcia, skórek i malowanie lakierem hybrydowym.</p>
+                        <div class="service-details">
+                            <span>⏱️ 60 min</span>
+                        </div>
+                    </div>
+                    <div class="service-action">
+                        <span class="price">100 zł</span>
+                        <a href="rezerwacja.html" class="btn-primary">Zarezerwuj</a>
+                    </div>
+                </div>
+
+                <div class="service-list-item">
+                    <div class="service-info">
+                        <h3>Pedicure SPA</h3>
+                        <p>Kompleksowy zabieg na stopy z kąpielą, peelingiem i masażem.</p>
+                        <div class="service-details">
+                            <span>⏱️ 90 min</span>
+                        </div>
+                    </div>
+                    <div class="service-action">
+                        <span class="price">140 zł</span>
+                        <a href="rezerwacja.html" class="btn-primary">Zarezerwuj</a>
+                    </div>
+                </div>
+
+                <div class="service-list-item">
+                    <div class="service-info">
+                        <h3>Henna Pudrowa + Geometria</h3>
+                        <p>Stylizacja brwi henną organiczną wraz z wyznaczeniem idealnego kształtu.</p>
+                        <div class="service-details">
+                            <span>⏱️ 45 min</span>
+                        </div>
+                    </div>
+                    <div class="service-action">
+                        <span class="price">90 zł</span>
+                        <a href="rezerwacja.html" class="btn-primary">Zarezerwuj</a>
+                    </div>
+                </div>
+
+                <div class="service-list-item">
+                    <div class="service-info">
+                        <h3>Oczyszczanie Twarzy</h3>
+                        <p>Wieloetapowe oczyszczanie manualne lub wodorowe z maską łagodzącą.</p>
+                        <div class="service-details">
+                            <span>⏱️ 90 min</span>
+                        </div>
+                    </div>
+                    <div class="service-action">
+                        <span class="price">180 zł</span>
+                        <a href="rezerwacja.html" class="btn-primary">Zarezerwuj</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 7 niebo Salon Urody. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
