@@ -757,7 +757,11 @@ footer {
 
     /* Hero Section */
     .hero {
-        background-attachment: scroll; /* Fix for mobile zoomed-in look */
+        background-attachment: scroll !important; /* Fix for mobile zoomed-in look */
+        background-position: center center !important;
+        background-size: cover !important;
+        height: 100vh; /* Ensure full height */
+        min-height: 500px; /* Prevent it from being too small on landscape mobile */
     }
 
     .hero-content h1 {
