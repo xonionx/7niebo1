@@ -611,18 +611,131 @@ footer {
     transform: none;
 }
 
+/* --- Booking Section --- */
+.booking-section {
+    padding: 150px 0 50px;
+    min-height: 80vh;
+}
+
+.booking-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: var(--white);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.form-group input, .form-group select, .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 1rem; /* Better for mobile to prevent zoom */
+}
+
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+    outline: none;
+    border-color: var(--accent-color);
+}
+
+.service-category-title {
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    color: var(--accent-color);
+    margin: 40px 0 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+.service-category-title:first-child {
+    margin-top: 0;
+}
+
+/* --- Services Detail Section --- */
+.services-detail-section {
+    padding: 150px 0 50px;
+}
+
+.service-list-item {
+    background: var(--white);
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: var(--transition);
+}
+
+.service-list-item:hover {
+    transform: translateY(-5px);
+}
+
+.service-info h3 {
+    margin-bottom: 10px;
+    color: var(--text-dark);
+}
+
+.service-details {
+    display: flex;
+    gap: 20px;
+    color: var(--text-light);
+    margin-bottom: 15px;
+}
+
+.service-details span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.service-action {
+    text-align: right;
+    min-width: 120px;
+}
+
+.price {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--accent-color);
+    margin-bottom: 10px;
+}
+
 /* --- Responsive --- */
 @media screen and (max-width: 768px) {
+    /* Navbar Adjustments */
+    .navbar {
+        height: 80px; /* Mniejsza wysokość paska */
+    }
+
+    .logo img {
+        height: 100px; /* Mniejsze logo */
+    }
+
     .nav-links {
         position: absolute;
         right: 0px;
-        height: calc(100vh - 100px);
-        top: 100px;
+        height: calc(100vh - 80px); /* Dostosowanie do wysokości paska */
+        top: 80px;
         background-color: var(--white);
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 50%;
+        width: 60%; /* Szersze menu na mobilu */
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
         padding-top: 50px;
@@ -642,8 +755,106 @@ footer {
         transform: translateX(0%);
     }
 
+    /* Hero Section */
     .hero-content h1 {
         font-size: 2.5rem;
+        padding: 0 10px;
+    }
+    
+    .hero-content p {
+        font-size: 1rem;
+        padding: 0 20px;
+    }
+
+    /* Grids & Flex Containers to Single Column */
+    .services-grid, 
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        padding: 0 10px;
+    }
+
+    .pricing-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pricing-card {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .contact-wrapper {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .contact-info, .contact-form {
+        width: 100%;
+        min-width: auto;
+    }
+
+    /* Typography Adjustments */
+    .section-title {
+        font-size: 2rem;
+    }
+
+    /* Booking Form Mobile */
+    .booking-section {
+        padding-top: 100px; /* Mniejszy padding góry */
+    }
+    
+    .booking-form {
+        padding: 20px;
+    }
+
+    /* Services Detail Mobile */
+    .services-detail-section {
+        padding-top: 100px;
+    }
+
+    .service-list-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .service-details {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .service-action {
+        text-align: center;
+        width: 100%;
+    }
+    
+    .service-action .btn-primary {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo img {
+        height: 80px;
+    }
+    
+    .navbar {
+        height: 70px;
+    }
+    
+    .nav-links {
+        top: 70px;
+        height: calc(100vh - 70px);
+        width: 80%;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .btn-primary {
+        width: 100%;
+        text-align: center;
     }
 }
 

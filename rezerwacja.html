@@ -8,39 +8,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-    <style>
-        .booking-section {
-            padding: 150px 0 50px;
-            min-height: 80vh;
-        }
-        .booking-form {
-            max-width: 600px;
-            margin: 0 auto;
-            background: white;
-            padding: 40px;
-            border-radius: 20px;
-            box-shadow: var(--shadow);
-        }
-        .form-group {
-            margin-bottom: 20px;
-        }
-        .form-group label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: 700;
-        }
-        .form-group input, .form-group select, .form-group textarea {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            font-family: inherit;
-        }
-        .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
-            outline: none;
-            border-color: var(--accent-color);
-        }
-    </style>
 </head>
 <body>
 
@@ -83,22 +50,65 @@
                     <select id="service">
                         <option value="">Wybierz usługę...</option>
                         <optgroup label="Masaże">
-                            <option value="masaz-klasyczny">Masaż Klasyczny</option>
-                            <option value="masaz-relaksacyjny">Masaż Relaksacyjny</option>
-                            <option value="masaz-kamieniami">Masaż Gorącymi Kamieniami</option>
-                            <option value="masaz-kobido">Masaż Twarzy Kobido</option>
+                            <option value="masaz-plecy-rece-szyja">Masaż plecy ręce szyja kark</option>
+                            <option value="masaz-banka-plecy-rece">Masaż bańką chińską (Plecy, Ręce, Szyja, Kark)</option>
+                            <option value="masaz-banka-uda-posladki">Masaż bańką chińską (Uda i Pośladki)</option>
+                            <option value="masaz-relaksacyjny-tsd">Relaksacyjny Masaż Twarz, Szyja, Dekolt</option>
+                            <option value="masaz-czekolada">Masaż Gorącą Czekoladą</option>
+                            <option value="masaz-ajurweda-pn">Masaż Ajurwedyjski NAMASZCZENIE (Plecy, Nogi)</option>
+                            <option value="masaz-bambus-pn">Masaż Modelujący Miotełkami i Pałeczkami Bambusowymi (Plecy, Nogi)</option>
+                            <option value="masaz-swieca-pn">Aromatyczny Masaż Świecą (Plecy, Nogi)</option>
+                            <option value="masaz-tajski-materac">Tradycyjny Masaż Tajski Na Materacu</option>
+                            <option value="masaz-tajski-stopy">Masaż Tajski Stóp Z Akupresurą</option>
+                            <option value="masaz-twarzy-glowy">Masaż Twarzy i Głowy</option>
+                            <option value="masaz-lifting-3d">Masaż Lifting Fusion 3D (Twarz, Szyja, Dekolt, Ręce)</option>
+                            <option value="masaz-oaza-60">Masaż OAZA SPOKOJU (60 min)</option>
+                            <option value="masaz-klasyczny-pn">Masaż Klasyczny (Plecy i Nogi)</option>
+                            <option value="masaz-jak-w-niebie">Masaż Relaksacyjny JAK W NIEBIE</option>
+                            <option value="masaz-oaza-90">Masaż OAZA SPOKOJU (90 min)</option>
+                            <option value="masaz-banka-cale">Masaż Modelujący Bańką Chińską (Całe Ciało)</option>
+                            <option value="masaz-bambus-cale">Masaż Modelujący Miotełkami i Pałeczkami Bambusowymi (Całe Ciało)</option>
+                            <option value="masaz-swieca-cale">Aromatyczny Masaż Świecą (Całe Ciało)</option>
+                            <option value="masaz-balijski">Masaż Balijski</option>
+                            <option value="masaz-ajurweda-cale">Masaż Ajurwedyjski NAMASZCZENIE (Całe Ciało)</option>
+                            <option value="masaz-intuicyjny">Masaż Intuicyjny</option>
                         </optgroup>
                         <optgroup label="Piercing">
                             <option value="piercing-ucho">Płatki uszu (Lobe)</option>
+                            <option value="piercing-bezhukowe-1">Bezhukowe Przekłucie Uszu - 1 Kolczyk</option>
+                            <option value="piercing-bezhukowe-2">Bezhukowe Przekłucie Uszu - 2 Kolczyki</option>
                             <option value="piercing-chrzastka">Chrząstka (Helix/Tragus)</option>
                             <option value="piercing-nos">Nos (Nostril/Septum)</option>
                             <option value="piercing-pepek">Pępek (Navel)</option>
                         </optgroup>
-                        <optgroup label="Kosmetyka">
-                            <option value="manicure">Manicure Hybrydowy</option>
-                            <option value="pedicure">Pedicure SPA</option>
-                            <option value="henna">Henna Pudrowa + Geometria</option>
+                        <optgroup label="Depilacja Twarzy (Nitkowanie)">
+                            <option value="depilacja-wasik">Wąsik</option>
+                            <option value="depilacja-brwi">Brwi</option>
+                            <option value="depilacja-wasik-brodka">Wąsik i Bródka</option>
+                            <option value="depilacja-wasik-brodka-policzki">Wąsik, Bródka, Policzki</option>
+                            <option value="depilacja-kompleks">Wąsik, Bródka, Policzki, Brwi</option>
+                        </optgroup>
+                        <optgroup label="Kosmetyka - Pielęgnacja Twarzy">
                             <option value="oczyszczanie">Oczyszczanie Twarzy</option>
+                            <option value="oczyszczanie-tsd">Oczyszczanie: Twarz, Szyja, Dekolt</option>
+                            <option value="mezoterapia-twarz">Mezoterapia Bezigłowa Twarzy</option>
+                            <option value="mezoterapia-tsd">Mezoterapia Bezigłowa Twarz, Szyja, Dekolt</option>
+                            <option value="redness-relief-twarz">Zabieg REDNESS RELIEF - Twarz</option>
+                            <option value="redness-relief-tsd">Zabieg REDNESS RELIEF - Twarz, Szyja, Dekolt</option>
+                        </optgroup>
+                        <optgroup label="Kosmetyka - Peelingi">
+                            <option value="peeling-twarz">Peeling Twarzy Z Maską</option>
+                            <option value="peeling-tsd">Peeling Twarz, Szyja, Dekolt Z Maską</option>
+                            <option value="peeling-dloni">Peeling Dłoni - Zabieg Parafinowy</option>
+                            <option value="peeling-plecy-nogi">Peeling Plecy, Nogi</option>
+                            <option value="peeling-cale-cialo">Peeling Całego Ciała</option>
+                            <option value="udvartana">UDVARTANA (Ajurwedyjski Rytuał)</option>
+                        </optgroup>
+                        <optgroup label="Kosmetyka - Inne">
+                            <option value="higiena-uszu">Profesjonalna Higiena Uszu</option>
+                            <option value="spa-wlosy">SPA dla Włosów</option>
+                            <option value="konsultacja-kosmetyczna">Konsultacja Kosmetyczna</option>
+                            <option value="konsultacja-dietetyczna">Konsultacja Dietetyczna</option>
                         </optgroup>
                     </select>
                 </div>
