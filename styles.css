@@ -565,6 +565,34 @@ ul {
     color: var(--text-light);
 }
 
+.map-link {
+    color: var(--accent-color);
+    text-decoration: underline;
+    font-weight: bold;
+    transition: var(--transition);
+}
+
+.map-link:hover {
+    color: #a38243;
+}
+
+.opening-hours {
+    width: 100%;
+    font-size: 0.95rem;
+    color: var(--text-light);
+    border-collapse: collapse;
+}
+
+.opening-hours td {
+    padding: 3px 0;
+    vertical-align: top;
+}
+
+.opening-hours td:first-child {
+    width: 100px;
+    font-weight: 700;
+}
+
 .contact-form {
     flex: 1;
     min-width: 300px;
